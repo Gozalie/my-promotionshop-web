@@ -34,7 +34,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 900;
 }
 
 .navbar .navbar-logo {
@@ -82,6 +82,25 @@ body {
 
 #hamburger-menu {
   display: none;
+}
+
+.navbar .navbar-extra .search-box {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar .navbar-extra .search-bar {
+  display: none;
+  position: absolute;
+  bottom: -10;
+  right: 0;
+  z-index: 9999;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.navbar .navbar-extra .search-bar.view {
+  display: block;
 }
 
 /* HERO SECTION */
@@ -363,6 +382,10 @@ footer .credit a {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.3);
+  }
+
+  .navbar .navbar-extra .search-bar {
+    padding: 7px 10px;
   }
 
   /* media query for about */
