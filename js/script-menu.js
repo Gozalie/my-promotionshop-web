@@ -17,6 +17,10 @@ document.querySelector(".search-box").onclick = () => {
   searchBar.classList.add("view");
 };
 
+document.querySelector(".sort-box").onclick = () => {
+  sortBy.classList.add("view-sort");
+};
+
 // klik di luar navbar untuk menghilakan nav
 document.addEventListener("click", function (e) {
   if (!hamMenu.contains(e.target) && !navbarNav.contains(e.target)) {
@@ -27,5 +31,11 @@ document.addEventListener("click", function (e) {
 document.addEventListener("click", function (e) {
   if (!searchBox.contains(e.target)) {
     searchBar.classList.remove("view");
+  }
+});
+
+document.addEventListener("click", function (e) {
+  if (!sortBox.contains(e.target)) {
+    sortBy.classList.remove("view-sort");
   }
 });
